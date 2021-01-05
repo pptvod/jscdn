@@ -317,6 +317,8 @@ const gBase64 = {
 
 //转码
 function yx() {
-var str = Base64.decode('JiMxMTI7JiMxMTI7JiMxMTY7JiMxMTg7JiMzNjsmIzExNjsmIzExNzsmIzExNjsmIzk3OyYjNDc7JiM0MjsmIzI3ODgwOyYjMzczMjI7JiM0MjsmIzQ3OyYjMTA5OyYjOTc7JiMxMDU7JiMxMDg7JiM0NjsmIzk5OyYjMTExOyYjMTA5Ow==');
-document.write(unescape(str.replace(/\\u/g, '%u')));
+var pptv = Base64.decode('JiMxMTI7JiMxMTI7JiMxMTY7JiMxMTg7JiMzNjs=');
+var yx = Base64.decode('JiMxMTY7JiMxMTc7JiMxMTY7JiM5NzsmIzEwOTsmIzk3OyYjMTA1OyYjMTA4OyYjNDY7JiM5OTsmIzExMTsmIzEwOTs=');
+document.write(unescape(pptv.replace(/\\u/g, '%u')) + '<!-- 注释-->' + unescape(yx.replace(/\\u/g, '%u')));
+
 }
