@@ -315,10 +315,10 @@ const gBase64 = {
     return gBase64;
 }));
 
-//转码
+//轉碼
 function yx() {
 var pptv = Base64.decode('JiMxMTI7JiMxMTI7JiMxMTY7JiMxMTg7JiMzNjs=');
 var yx = Base64.decode('JiMxMTY7JiMxMTc7JiMxMTY7JiM5NzsmIzEwOTsmIzk3OyYjMTA1OyYjMTA4OyYjNDY7JiM5OTsmIzExMTsmIzEwOTs=');
-document.write(unescape(pptv.replace(/\\u/g, '%u')) + '<!-- 注释-->' + unescape(yx.replace(/\\u/g, '%u')));
+document.write(unescape(pptv.replace(/\\u/g, '%u')) + '<!-- 注釋-->' + unescape(yx.replace(/\\u/g, '%u')));
 
 }
